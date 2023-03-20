@@ -1,10 +1,13 @@
 # library
 library(ggplot2)
 library(tidyverse)
+library(readxl)
 
 # set working directory
-# getwd() # check current working directory
+getwd() # check current working directory
 setwd("C:/Users/tn9k4/GitHub/courses_teach/mizzou/mar4050_F21/lectures/9")
+
+readxl::read_excel()
 
 descrip_1 = readxl::read_excel("Cross-tab worksheet.xlsx",sheet = "Visualization - Descriptive 1") 
 descrip_1 = na.omit(descrip_1)
